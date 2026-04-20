@@ -62,16 +62,13 @@ layout: center
 <img class="object-cover h-80" alt="Observability" src="https://arize.com/wp-content/uploads/2021/05/observability-iceberg-2.png" />
 
 <!--
-Observability is the practice of quickly finding out what the problem is and getting to the root cause by understanding the internal state of a system.
+Observability (an ability to observe) is the practice of quickly finding out what the problem is and getting to the root cause by understanding the internal state of a system.
 
 Benefits:
 - Better understanding of system behavior how different components interact and how changes in one area affect others
 - Improved troubleshooting so that teams can quickly identify and resolve issues in complex systems 
 - Increased efficiency and productivity by saving time and resources
-- Strategic advantage by linking system health to business outcomes, driving innovation and delivering better user experience
-
-This is especially useful for LLMs, unlike traditional applications, LLMs are probabilistic and can behave unpredictably.
-One simple change in the prompt can cause a completely different output and cause a lot of problems.
+- Strategic advantage by linking system health to business outcomes, driving actionable actions and delivering better user experience
 
 Site Reliability Engineering (SRE) is one of the engineering disciplines that focuses on making systems observable and to ensure they're reliable and efficient.
 -->
@@ -108,7 +105,7 @@ These data points combine to provide insights into the health of complex systems
 
 - **Metrics** provide performance data through quantitative measurements.
 - **Logs** offer archived records of historical events and errors of a system.
-- **Traces** follow request or transaction paths to help identify root causes.
+- **Traces** request/transaction paths to help identify root causes.
 -->
 
 ---
@@ -128,7 +125,7 @@ Metrics provide a high level picture of the state of a system.
 Metrics are the foundation of alerts because metrics are numeric values and can be compared against known thresholds. 
 Alerts constantly run in the background and trigger when a value is outside of an expected range. 
 This is typically the first sign that something is going on and are where discovery first starts.
-Metrics indicate that something is happening.
+Metrics indicate that something is happening (anomaly).
 -->
 
 ---
@@ -184,11 +181,10 @@ You'll collect data from it and send the data to the observability backend of yo
 Then connect the backend to a visualization front end where you can query and use the data that you're interested in.
 
 The most common types of data collected for observability are metrics, logs, and traces (telemetry data).
-Getting the telemetry data into the backend is an important part of understanding your infrastructure or applications.
 -->
 
 ---
-transition: slide-left
+transition: slide-up
 layout: center
 ---
 
@@ -196,8 +192,19 @@ layout: center
 
 <!--
 This is where OTel comes in.
-OTel is an open source observability framework to facilitate the process of generating, collecting, managing (aggregating, filtering, processing, etc), and exporting telemetry data (metrics, logs, and traces).
+OTel is an open source observability framework and open standard to facilitate the process of generating, collecting, managing (aggregating, filtering, processing, etc), and exporting telemetry data (metrics, logs, and traces).
 This process is known as instrumentation.
+-->
+
+---
+transition: slide-left
+layout: center
+---
+
+<img class="object-cover" alt="Otel Lgtm" src="/otel-lgtm.png" />
+
+<!--
+The open source example of this is using otel-lgtm by grafana 
 -->
 
 ---
@@ -208,6 +215,18 @@ layout: center
 # OpenTelemetry
 
 Demo
+
+<!--
+-->
+
+---
+transition: slide-up
+layout: center
+---
+
+# Logging Sucks
+
+TODO
 
 <!--
 -->
