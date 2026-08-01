@@ -244,6 +244,10 @@ class: text-center
 
 https://loggingsucks.com/
 
+↓
+
+https://www.evlog.dev/start/introduction
+
 <!--
 Common logging practice breaks in distributed systems.
 Your logs are lying to you — not maliciously. They're not equipped to tell the truth.
