@@ -220,15 +220,33 @@ Demo
 -->
 
 ---
-transition: slide-up
+transition: slide-left
 layout: center
+class: text-center
+---
+
+# Hidden Cost of Telemetry
+
+https://blog.platformatic.dev/the-hidden-cost-of-context
+
+<!--
+Ok, so "How much performance do we sacrifice for observability?"
+https://github.com/platformatic/async-local-storage-perf-node-24
+-->
+
+---
+transition: slide-left
+layout: center
+class: text-center
 ---
 
 # Logging Sucks
 
-TODO
+https://loggingsucks.com/
 
 <!--
+Common logging practice breaks in distributed systems.
+Your logs are lying to you — not maliciously. They're not equipped to tell the truth.
 -->
 
 ---
